@@ -1,78 +1,27 @@
-# 🌍 Day 3 – CO₂ Emissions EDA & Visualization
+# Day 5 - Collaborative Filtering Movie Recommendation System
 
-## 📌 Project Overview
-This project explores **global CO₂ emissions trends** from historical data across different countries and years.  
-We analyze **global growth**, **top emitters**, **country comparisons**, and even **interactive maps** to better understand emission patterns.
+## 📌 Overview
+This project implements a **Collaborative Filtering Recommendation System** using the **MovieLens 100K dataset**.  
+Unlike content-based filtering (Day 4), collaborative filtering recommends movies based on **user behavior & ratings**.
 
-**Dataset Example:**
-- Country
-- ISO Code
-- Year
-- Annual CO₂ emissions (in tonnes)
+## 📂 Dataset
+- **Source:** [MovieLens Dataset](https://grouplens.org/datasets/movielens/latest/)  
+- **Files Used:**
+  - `movies.csv` → movieId, title, genres
+  - `ratings.csv` → userId, movieId, rating, timestamp
 
----
+## ⚙️ Features
+- Collaborative Filtering using **Cosine Similarity**
+- Top-rated movies visualization
+- Easy recommendation function
 
-## 📊 Key Insights
-- **Global emissions** have generally risen over the decades, with some dips during global crises.
-- **Top emitters** are dominated by China, USA, and India in recent years.
-- Growth patterns differ significantly between developed and developing nations.
+## 🛠️ Tech Stack
+- Python
+- Pandas, NumPy
+- Scikit-learn
+- Matplotlib, Seaborn
 
----
-
-## 📂 Folder Structure
-Day3_EDA_Visualization/
-│
-├── Data/
-│ └── co2_emissions.csv
-│
-├── Images/
-│ ├── global_trend.png
-│ ├── top_emitters.png
-│ ├── usa_china_india_trend.png
-│ ├── pakistan_growth_rate.png
-│
-├── co2_emissions_analysis.py
-├── README.md
-├── requirements.txt
-└── .gitignore
-
-
----
-
-## 🚀 How to Run the Project
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/YourUsername/Day3_EDA_Visualization.git
-cd Day3_EDA_Visualization
-pip install -r requirements.txt
-python co2_emissions_analysis.py
-
-📦 Dependencies
-pandas → Data manipulation
-
-matplotlib & seaborn → Static visualizations
-
-plotly → Interactive maps
-
-numpy → Numerical operations
-
-📈 Visualizations Included
-Global CO₂ emissions trend over time
-
-Top 10 CO₂ emitters in the latest year
-
-Country-wise trends (USA, China, India)
-
-Interactive choropleth map for any year
-
-Yearly growth rate for a selected country
-
-💡 Next Steps / Future Improvements
-Add per capita emissions analysis
-
-Include renewable energy adoption trends
-
-Compare CO₂ emissions with GDP and population
-
-✍ Author: Akhtar Abas
-📅 Date: 2025-08-12
+## 🚀 How to Run
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/Akhtar-Abas/Day5_Collaborative_Recommendation_System.git
